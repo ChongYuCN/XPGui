@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "xpgui",
+  "version": "${version}",
+  "name": "XPGui",
+  "description": "A simple mod: can store player experience",
+  "authors": [
+    "ChongYu"
+  ],
+  "contact": {
+    "repo": "https://github.com/16348/XPGui"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/xpgui/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.chongyu.xpgui.XPGuiClient"
+    ],
+    "main": [
+      "com.chongyu.xpgui.XPGui"
+    ]
+  },
+  "mixins": [
+    "xpgui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
