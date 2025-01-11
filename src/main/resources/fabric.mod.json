@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "xpgui",
+  "version": "${version}",
+  "name": "XPGui",
+  "description": "A simple fabric mod: can store player experience",
+  "authors": ["ChongYu"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/xpgui/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.chongyu.xpgui.XPGuiClient"
+    ],
+    "main": [
+      "com.chongyu.xpgui.XPGui"
+    ]
+  },
+  "mixins": [
+    "xpgui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.10",
+    "fabric": "*",
+    "minecraft": ">=1.20.5"
+  }
+}
